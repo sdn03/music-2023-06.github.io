@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《Web应用基础》课程结业报告</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .section-content {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 报告需阐述：做的什么、开发过程、
+        遇到的问题、如何解决、哪些未解决、
+        总结（特别强调，对遇到问题的描述、
+        如何解决的以及项目的总结
+        是重点加分项）； -->
+    <h1>《Web应用基础》课程结业报告</h1>
+
+    <div class="section">
+        <h2><div class="section-title">一. 项目简介</div></h2>
+        <div class="section-content">
+            <p>项目内容是一个关于音乐的静态网站,主页头部有搜索框,注册,登录,主页导航栏有首页,歌手,mv和个人主页音乐展示的超链接标签,
+                其中,首页包括推荐歌曲的五张轮播图,歌单推荐,排行榜,网页底部有版权声明等信息。</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2><div class="section-title">二. 开发过程</div></h2>
+        <div class="section-content">
+            <h3>（一）选择主题</h3>
+            <p>1.首先，选择主题为制作一个静态音乐网站，展示一些关于音乐的信息。</p>
+            <p>2.确定网页项目的项目结构,在项目下创建相应文件夹(css,html,js等文件夹)</p>
+            <h3>（二）设计网页</h3>
+            <p>1.在确定好主题后，根据主题设计好网页的内容结构(主界面和子界面)和放置的大体内容</p>
+            <p>2.在网上寻找制作音乐网站需要的图片素材,在项目文件下新建images文件,将其放入该文件夹下,做好准备工作</p>
+            <h3>（三）编写网页</h3>
+            <p>根据设计出的界面从html文件编写开始，编写index.html的标签框架,将需要展示的内容放到
+                html标签内,然后使用css对标签的内容样式和布局设计进行实现,之后根据需求编写js文件,完成轮播图的定时切换效果
+            </p>
+        </div>
+    </div>   
+
+    <div class="section">
+        <h2><div class="section-title">三. 问题分析</div></h2>
+        <div class="section-content">
+            <h3>（一）问题及解决方案</h3>
+            <p>1. 主页头部布局问题:主页头部的logo,搜索栏和后面的登录、注册和报告三个板块的布局最开始是合在一起靠左对齐,没有观看感</p>
+            <p>解决方案:将这三部分内容放到同一个父标签div下,采用flex布局,将三者之间的间隔布局属性设置成space-around,达到分开布局的目的,实现简单的布局效果</p>
+            <p>2. 主页内容展示问题:设计需求是主页到导航栏下方的正文内容里需要展示首页内的内容,因此需要解决结构问题</p>
+            <p>解决方案:将主页的正文部分用iframe标签嵌入首页的html文件,达到主页正文能展示首页html的内容的目的</p>
+            <p>3. 注册的内部标签使用问题</p>
+            <p>由于注册是个类似表格布局，而且注册的内容需要打包传到后端，因此总体的内容先用form表单标签包裹，在form标签内的注册的展示内容用table标签包裹,\
+                每个单元格放入需要交互的内容,依次实现注册的展示和交互效果
+            </p>
+            <p>4. 个人主页中头像和底部图片的位置布局问题</p>
+            <p>将图片设置成div容器的背景图片，再将头像图片放在该容器内，设置头像容器的左外边距为48%使其位于页面正中，再设置上外边距为100px，使其位于父容器的中间</p>
+            <p>5. 个人主页中我喜欢的音乐内容放置布局问题</p>
+            <p>由于放置的音乐信息属于网格状布局，因此采用列数为3的grid布局展示到界面上</p>
+
+            <h3>（二）未解决的问题</h3>
+            <p>1. 主界面的正文内容的长度为固定宽度,未能设置成随首页html的内容变化长度</p>
+            <p>2. 在展示歌手,mv界面的内容时,未能将一排的内容设置成可以根据按钮切换图片,整体效果看上去很简洁,还需改善</p>
+
+        </div>
+    </div>   
+    
+    <div class="section">
+        <h2><div class="section-title">四. 总结</div></h2>
+        <div class="section-content">
+            <p>通过8周对web应用基础这门课的学习,了解到了html,css,JavaScript三个板块的基础知识,可以通过这三门语言编写一个简单的静态网站,
+                从最开始html学习标签的作用和用法,到css为标签设置样式,如css中的选择器能够根据需要为特定的标签设置一定的样式,定位,flex布局,grid布局为标签设置布局位置,再到JavaScript
+                的变量,数据类型,对象的定义和使用,数组,函数等内容的学习，认识到通过这三者的配合使用可以制作一个具有一定动态效果的网页。
+                在之后的时间，还需要进一步加强对这三门语言的应用和知识的积累，在打好基础的同时，不断熟悉更多的css样式的应用和JavaScript的灵活应用。
+            </p>
+        </div>
+    </div>   
+    
+</body>
+</html>

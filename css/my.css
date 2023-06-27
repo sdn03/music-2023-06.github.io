@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin:0 auto;
+}
+.head{
+    background-image:url(../images/星空.jpg) ;
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:100%;
+    height:300px;
+    width:100%;
+}
+.head .picture{
+    margin-left: 48%;
+    margin-top: 100px;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;;
+
+}		
+.head p{
+    color:white;
+    font-size: large;
+    margin-left: 49%;
+}
+.footer{
+    background-color:#084663b3;
+    color:#97bcf4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+}
+.content .title-love{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    color:rgb(18, 117, 132);
+    font-weight: 1000;
+    margin-left:47.5%;
+    margin-block: 20px;
+}
+
+.item-box{
+    display: grid;
+    grid-template-columns:repeat(3);
+    grid-template-columns:auto  300px 300px;
+    grid-template-rows: repeat(1,50px);
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+} 
+.item-box .title-item{
+    font-size: large;
+    font-weight: bolder;
+    color:darkslategray;
+}
+.item-box .song-item{
+    font-size: large;
+    font-weight: 400;
+    color:black;
+    transition:0.5s;
+}
+.item-box .song-item:hover{
+    background-color: darkgrey;
+    color:darkcyan;
+}

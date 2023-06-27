@@ -1,0 +1,57 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.box{
+    width:100%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.son{
+    width: 180px;
+    height: 180px;
+    margin: 20px auto;
+    padding:1px;
+} 
+
+p{
+font-size: 26px;
+font-family: "楷体";
+text-align: center;
+line-height:25px;
+letter-spacing: 5px; 
+color: #000;
+}
+
+h1{
+font-family: "楷体";
+text-align: left;
+letter-spacing: 5px; 
+color: #000;
+font-weight:bold;
+}
+
+.hr1{
+    border: none;
+    height: 5px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .01), 
+    rgba(0, 0, 0, .4), rgba(0, 0, 0, .01))
+}
+
+.son img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.son p{
+font-size: 18px;
+font-family: "楷体";
+text-align: center;
+letter-spacing: 1px; 
+color: #000;
+}
